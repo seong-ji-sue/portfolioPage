@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
-import GlobalStyle from './Styles/GlobalStyle';
-import Main from './Pages/Main/Main';
+import GlobalFonts from './Styles/fonts/fonts';
+import Info from './Pages/Info/Info';
+import AboutMe from './Pages/AboutMe/AboutMe';
 
 class Routes extends React.Component {
   render() {
     return (
       <>
-        <GlobalStyle />
+        <GlobalFonts />
         <Router>
-          <Switch>
-            <Main />
-          </Switch>
+          <Info></Info>
+          <AboutMe></AboutMe>
         </Router>
       </>
     );
