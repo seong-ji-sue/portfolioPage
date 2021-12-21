@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Title from './../../Components/Title/Title';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
@@ -29,11 +30,7 @@ function AboutMe() {
   ];
   return (
     <Container>
-      <TitleWrapper>
-        <TitleIcon />
-        &nbsp;
-        <TitleContent> About Me</TitleContent>
-      </TitleWrapper>
+      <Title content='ABOUT ME' borderColor='#cccccc' />
       <ProfilesWrapper>
         {profileData.map(({ id, title, content, icon }) => {
           return (
@@ -59,36 +56,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 71.25rem;
   padding: 4rem 2rem;
   margin: 0 auto;
-`;
-
-const TitleWrapper = styled.div`
-  display: table;
-  position: relative;
-  margin: 0 auto 3rem;
-`;
-
-const TitleIcon = styled.img.attrs({
-  alt: 'TitleIcon',
-  src: '/images/TitleIcon.png',
-})`
-  width: 2rem;
-  height: 2rem;
-  opacity: 0.5;
-  cursor: pointer;
-`;
-
-const TitleContent = styled.span`
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #cccccc;
-  font-family: 'Black Han Sans, sans-serif';
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 1.5;
 `;
 
 const ProfilesWrapper = styled.div`
@@ -108,24 +77,41 @@ const Profile = styled.div`
 
 const ProfileIcon = styled.div`
   width: 2rem;
-  min-width: 2rem;
   height: 2rem;
   margin-top: 0.2rem;
   margin-right: 1.5rem;
   & .iconWidth {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    @media only screen and (min-width: 575px) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (min-width: 940px) {
+      font-size: 1.65rem;
+    }
   }
 `;
 
 const ProfileTitle = styled.div`
   margin-bottom: 0.5rem;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-family: 'Noto Sans KR,sans-serif';
+  @media only screen and (min-width: 575px) {
+    font-size: 1.25rem;
+  }
+  @media only screen and (min-width: 940px) {
+    font-size: 1.35rem;
+  }
 `;
 
 const ProfileContent = styled.div`
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'Noto Sans KR,sans-serif';
+  @media only screen and (min-width: 575px) {
+    font-size: 1rem;
+  }
+  @media only screen and (min-width: 940px) {
+    font-size: 1.15rem;
+  }
 `;
