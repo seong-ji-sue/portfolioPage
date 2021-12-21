@@ -1,0 +1,43 @@
+{
+  "skillsData": [
+    {
+      "id": 1,
+      "title": "Frontend",
+      "images": [
+        "htmlJsCss",
+        "recoil",
+        "redux",
+        "typeScript",
+        "react",
+        "reactNative",
+        "sass",
+        "styleComponent"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Backend",
+      "images": ["java", "node", "prisma", "spring"]
+    },
+    {
+      "id": 3,
+      "title": "Database",
+      "images": ["mysql", "oracle"]
+    },
+    {
+      "id": 4,
+      "title": "Deployment",
+      "images": ["aws"]
+    },
+    {
+      "id": 5,
+      "title": "VersionControl",
+      "images": ["git", "github"]
+    },
+    {
+      "id": 6,
+      "title": "Comunication",
+      "images": ["zeplin", "figma", "notion", "slack", "zoom"]
+    }
+  ]
+}

@@ -1,22 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 function Info() {
+  const [infoData, setInfoData] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/Info.json')
+      .then(res => res.json())
+      .then(data => setInfoData(data.infoData))
+      .catch(console.log);
+  }, []);
+
   return (
     <Container>
       <ContentWraper>
         <TitleInfo>
-          - 성지수 -
-          <br />웹 개발자 포토폴리오
+          {infoData.titleName}
+          <br />
+          {infoData.titleContent}
         </TitleInfo>
         <Boundary></Boundary>
         <ContentInfo>
-          안녕하세요.
+          {infoData.contentFirstLine}
           <br />
-          공부가 취미인 프론트 엔드 개발자입니다.
+          {infoData.contentSecondLine}
           <br />
-          매우 꼼꼼한 성격, 그리고 주변에게도 전달되는 열정적인 에너지가 저의
-          장점입니다.
+          {infoData.contentThirthLine}
           <br />
         </ContentInfo>
         <LearnMoreButton>더 알아보기 ↓</LearnMoreButton>
@@ -39,6 +48,9 @@ const Container = styled.div`
 `;
 
 const ContentWraper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 71.25rem;
   margin: 0 auto;
@@ -73,14 +85,11 @@ const ContentInfo = styled.div`
 `;
 
 const LearnMoreButton = styled.div`
-  display: inline-block;
+  width: 175px;
   padding: 1rem 2rem;
-  border: none;
   border-radius: 10rem;
   background-color: #f4623a;
-  font-weight: 400;
   font-size: 1rem;
-  text-decoration: none;
   color: #fff;
   line-height: 1.5;
   cursor: pointer;
