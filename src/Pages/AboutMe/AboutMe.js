@@ -58,6 +58,8 @@ const Container = styled.div`
   align-items: center;
   padding: 4rem 2rem;
   margin: 0 auto;
+  width: 100%;
+  max-width: 71.25rem;
 `;
 
 const ProfilesWrapper = styled.div`

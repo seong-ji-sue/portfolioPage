@@ -17,14 +17,15 @@ function Skills() {
       <Container>
         <Title content='SKILLS' borderColor='#000000' />
         <SkillsWrapper>
-          {skillsData.map(({ title, images }) => {
+          {skillsData.map(({ id, title, images }) => {
             return (
-              <SkillBoxWrapper>
+              <SkillBoxWrapper key={id}>
                 <SkillTitle>{title}</SkillTitle>
                 <div>
-                  {images.map(image => {
+                  {images.map(({ id, image }) => {
                     return (
                       <SkillImage
+                        key={id}
                         src={`/images/Skills/${title}/${image}.png`}
                         alt={image}
                       />
@@ -47,6 +48,8 @@ const BackgroundColor = styled.div`
 `;
 
 const Container = styled.div`
+  width: 100%;
+  max-width: 71.25rem;
   padding: 4rem 2rem;
   margin: 0 auto;
   height: 190rem;
