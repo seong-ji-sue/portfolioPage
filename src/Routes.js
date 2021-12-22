@@ -4,6 +4,7 @@ import GlobalFonts from './Styles/fonts/fonts';
 import Info from './Pages/Info/Info';
 import AboutMe from './Pages/AboutMe/AboutMe';
 import Skills from './Pages/Skills/Skills';
+import Archiving from './Pages/Archiving/Archiving';
 
 class Routes extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class Routes extends React.Component {
           <Info></Info>
           <AboutMe></AboutMe>
           <Skills></Skills>
+          <Archiving></Archiving>
         </Router>
       </>
     );
