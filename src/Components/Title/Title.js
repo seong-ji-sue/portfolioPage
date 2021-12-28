@@ -30,12 +30,16 @@ const Container = styled.div`
 `;
 
 const Content = styled.span`
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: ${({ borderColor }) => borderColor};
+  border-bottom: 1px solid ${({ borderColor }) => borderColor};
   color: ${({ fontColor }) => fontColor};
   font-family: 'Black Han Sans, sans-serif';
   font-weight: 400;
-  font-size: 3rem;
+  @media only screen and (min-width: 575px) {
+    font-size: 2.5rem;
+  }
+  @media only screen and (min-width: 940px) {
+    font-size: 3rem;
+  }
+  font-size: 2rem;
   line-height: 1.5;
 `;

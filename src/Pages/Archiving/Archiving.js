@@ -63,9 +63,10 @@ const BackgroundColor = styled.div`
 const Container = styled.div`
   width: 100%;
   max-width: 71.25rem;
-  padding: 4rem 2rem;
-  margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 2rem 0.5rem;
+  @media only screen and (min-width: 335px) {
+    padding: 4rem 2rem;
+  }
   margin: 0 auto;
 `;
 
@@ -81,7 +82,7 @@ const ArchivingBoxWrapper = styled.div`
   border-radius: 1rem;
   background-color: #f5f5f5;
   cursor: pointer;
-  margin: 1rem;
+  margin: 0 auto 2rem;
   @media only screen and (min-width: 977px) {
     width: 30rem;
   }
