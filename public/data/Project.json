@@ -1,0 +1,181 @@
+{
+  "projectData": [
+    {
+      "id": 1,
+      "name": "kaudaran",
+      "title": "조구만 스튜디오 웹 사이트 클론코딩",
+      "member": "People 6",
+      "date": "2 Week",
+      "images": [
+        { "id": 1, "image": "detail" },
+        { "id": 2, "image": "review" },
+        { "id": 3, "image": "main" },
+        { "id": 4, "image": "login" },
+        { "id": 5, "image": "signup" }
+      ],
+      "contents": [
+        {
+          "id": 1,
+          "text": "조구만 스튜디오 웹 사이트를 클론코딩한 프로젝트 입니다. 팀원 6명이서 2주동안 React, Node를 경험하면서 처음으로 웹 서비스를 개발하고 배포했습니다. 라이브러리를 사용을 안하고 직접 손코딩하면서 원리를 파악하는데 집중했습니다."
+        },
+        {
+          "id": 2,
+          "text": "저는 프론트에서 class와 sass 기반으로 코드를 작성했고 Ref에 대한 개념을 완벽 숙지했습니다. 그리고 백엔드에서는 Prisma와 mysql, Express 기반으로 코드를 작성했습니다. JWT토큰 발행 및 암호화, 복호화를 구현했고 Request 데이터를 검사하는 정규화 모듈을 구현하여 다른 API에도 사용할 수 있게 했습니다. "
+        }
+      ],
+      "descriptions": [
+        {
+          "id": 1,
+          "main": "맡은기능(Front)",
+          "text": "Detail 페이지 옵션 클릭시 상품 수량 및 가격 변동 기능 구현, 좋아요 기능 구현, 썸네일 이미지 변경, Ref를 이용하여 스크롤 이동"
+        },
+        {
+          "id": 2,
+          "main": "맡은기능(Back)",
+          "text": "회원가입 API, JWT 및 암호와 + 복호화, Request 데이터 정규식 검사 Utill 구현"
+        },
+        {
+          "id": 2,
+          "main": "도매인",
+          "link": "http://52.79.242.181/"
+        },
+        {
+          "id": 3,
+          "main": "회고록",
+          "link": "https://zibu-story.tistory.com/174?category=893777"
+        },
+        {
+          "id": 4,
+          "main": "GitHub(Front)",
+          "link": "https://github.com/wecode-bootcamp-korea/fullstack2-1st-keudaran-studio-frontend"
+        },
+        {
+          "id": 5,
+          "main": "GitHub(Back)",
+          "link": "https://github.com/wecode-bootcamp-korea/fullstack2-1st-keudaran-studio-backend"
+        },
+        {
+          "id": 6,
+          "main": "Skills(Front)",
+          "text": "React, Sass, Javascript, HTML"
+        },
+        {
+          "id": 7,
+          "main": "Skills(Back)",
+          "text": "Node, Express, Mysql, Prisma"
+        },
+        {
+          "id": 8,
+          "main": "Deployment",
+          "text": "GitHub, Slack, Notion, Postman"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "adlip",
+      "title": "프립 웹 사이트 클론코딩",
+      "member": "Front 5, Back 2",
+      "date": "2 Week",
+      "images": [
+        { "id": 1, "image": "mainTop" },
+        { "id": 2, "image": "mainBottom" },
+        { "id": 3, "image": "teamIntro" },
+        { "id": 4, "image": "searchModal" },
+        { "id": 5, "image": "mainCategory" },
+        { "id": 6, "image": "footer" }
+      ],
+      "contents": [
+        {
+          "id": 1,
+          "text": "프립 웹 사이트를 클론코딩한 프로젝트 입니다. 2주동안 프론트 5명 백엔드 2명이 각자 역활을 나눠서 프로젝트를 진행했습니다. 라이브러를 사용하여 손코딩 하는 시간보다 다양한 기능을 파악했고 처음 프로젝트 했을때보다 디테일한 완성도에 집중했습니다. "
+        },
+        {
+          "id": 2,
+          "text": "처음 프로젝트랑 다르게 미팅할때마다 회의내용, 오늘 할일, 대략적인 구현 기간 등 Notion에 남겨서 팀원들이랑 공유하는데 초점을 맞췄고 Front에서 함수형, style Componet, hook 기반으로 검색 모달, 메인 페이지 전반적인 기능, 케라셀, 공통 Card Componet 활용하여 팀 소계 페이지 List 페이지 구현, Header, Nav, Footer 등을 구현했습니다."
+        },
+        {
+          "id": 3,
+          "text": "진행하면서 비동기에 따라 렌더링이 늦을때 동기로 바꿔줘야된다는 점과, 검색 엔진의 모든 부분을 파악할 수 있는 계기가 되서 좋았습니다."
+        }
+      ],
+      "descriptions": [
+        {
+          "id": 1,
+          "main": "맡은기능(Front)",
+          "text": "Detail 페이지 옵션 클릭시 상품 수량 및 가격 변동 기능 구현, 좋아요 기능 구현, 썸네일 이미지 변경, Ref를 이용하여 스크롤 이동"
+        },
+        {
+          "id": 2,
+          "main": "도매인",
+          "link": "http://3.34.61.252:3000/"
+        },
+        {
+          "id": 3,
+          "main": "회고록",
+          "link": "https://zibu-story.tistory.com/181?category=893777"
+        },
+        {
+          "id": 4,
+          "main": "GitHub(Front)",
+          "link": "https://github.com/wecode-bootcamp-korea/fullstack2-2nd-ADLIP-frontend/pulls"
+        },
+        {
+          "id": 6,
+          "main": "Skills(Front)",
+          "text": "React, React Hook, Javascript, HTML, Style Componet, Restful ApI"
+        },
+        {
+          "id": 8,
+          "main": "Deployment",
+          "text": "GitHub, Slack, Notion, Postman"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "iBiz",
+      "title": "아이비즈 회사 기업협업",
+      "member": "Front 1, Back 2",
+      "date": "1 Month",
+      "images": [
+        { "id": 1, "image": "scheduleSetting" },
+        { "id": 2, "image": "create" },
+        { "id": 3, "image": "pageRouting" },
+        { "id": 4, "image": "scheduleData" }
+      ],
+      "contents": [
+        {
+          "id": 1,
+          "text": "Blackboard 시스템과 클라이언트의 학사 정보 데이터 통합 구현을 제공하기 위해 데이터 연동 SaaS 플랫폼을 구축하는 회사에서 1달간 프로젝트를 했습니다. 백엔드는 API가 구축이 되있었고 Front는 레이아웃정도만 구현되있는 상태에서 코드 파악 및 문서화에 초점을 두었습니다. 그리고 프로젝트에 담은 내용은 사전에 대표님께 허락 받은 사항입니다."
+        },
+        {
+          "id": 2,
+          "text": "프로젝트 하면서 처음으로 Refresh 토큰과 Access 토큰의 차이점을 알게되었고 스케쥴링에 따른 CRUD를 제대로 구현 할 수 있어서 좋았습니다. 처음 로그인시 스케쥴링 생성하는것과 로그인 후 스케쥴 생성하는거를 같은 Componet로 두고 세부적은 기능, 레이아웃의 차이는 props에 따라 다르게 동작하도록 구현했습니다."
+        }
+      ],
+      "descriptions": [
+        {
+          "id": 1,
+          "main": "맡은기능(Front)",
+          "text": "Refresh 토큰과 Access 토큰 적용, 스케쥴에 따른 CRUD, 리팩토링, 문서화, 로그인, 회원가입"
+        },
+        {
+          "id": 3,
+          "main": "회고록",
+          "link": "https://zibu-story.tistory.com/183?category=893777"
+        },
+        {
+          "id": 6,
+          "main": "Skills(Front)",
+          "text": "React, React Hook, Javascript, HTML, Style Componet, Restful ApI, antd"
+        },
+        {
+          "id": 8,
+          "main": "Deployment",
+          "text": "GitHub, Slack, Notion, Postman, Teams"
+        }
+      ]
+    }
+  ]
+}
