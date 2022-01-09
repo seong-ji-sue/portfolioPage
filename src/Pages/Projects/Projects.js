@@ -13,12 +13,12 @@ function Projects() {
       .then(data => setProjectData(data.projectData))
       .catch(console.log);
   }, []);
-  console.log(projectData);
+
   return (
     <BackgroundColor>
       <Container>
         <Title content='PROJECTS' borderColor='#ffffff' fontColor='#ffffff' />
-        <ProjectsWrapper>
+        <Wrapper>
           {projectData.map(
             ({
               id,
@@ -31,7 +31,7 @@ function Projects() {
               descriptions,
             }) => {
               return (
-                <ProjectsBoxWrapper key={id}>
+                <BoxWrapper key={id}>
                   <ProjectTitle>{title}</ProjectTitle>
                   <ProjectData>
                     {member} <span>( {date} )</span>
@@ -53,11 +53,11 @@ function Projects() {
                   <DescriptionTable
                     descriptions={descriptions}
                   ></DescriptionTable>
-                </ProjectsBoxWrapper>
+                </BoxWrapper>
               );
             }
           )}
-        </ProjectsWrapper>
+        </Wrapper>
       </Container>
     </BackgroundColor>
   );
@@ -79,11 +79,11 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
-const ProjectsWrapper = styled.div`
+const Wrapper = styled.div`
   display: block;
 `;
 
-const ProjectsBoxWrapper = styled.div`
+const BoxWrapper = styled.div`
   padding: 2rem;
   margin: 0 auto 2rem;
   border-radius: 1rem;
@@ -121,9 +121,7 @@ const ChangeLayout = styled.div`
 const ProjectContent = styled.div`
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-
   font-weight: 400;
   font-size: 1rem;
-  font-family: 'Noto Sans KR,sans-serif';
   line-height: 1.5;
 `;

@@ -11,32 +11,36 @@ function Info() {
       .catch(console.log);
   }, []);
 
+  const { title, developer, firstSentence, secondSentence, thirthSentence } =
+    infoData;
   return (
-    <Container>
-      <ContentWraper>
-        <TitleInfo>
-          {infoData.titleName}
-          <br />
-          {infoData.titleContent}
-        </TitleInfo>
-        <Boundary></Boundary>
-        <ContentInfo>
-          {infoData.contentFirstLine}
-          <br />
-          {infoData.contentSecondLine}
-          <br />
-          {infoData.contentThirthLine}
-          <br />
-        </ContentInfo>
-        <LearnMoreButton>더 알아보기 ↓</LearnMoreButton>
-      </ContentWraper>
-    </Container>
+    <BackgroundImage>
+      <Container>
+        <Wrapper>
+          <TitleInfo>
+            {developer}
+            <br />
+            {title}
+          </TitleInfo>
+          <Boundary />
+          <IntroduceMy>
+            {firstSentence}
+            <br />
+            {secondSentence}
+            <br />
+            {thirthSentence}
+            <br />
+          </IntroduceMy>
+          <LearnMoreButton>더 알아보기 ↓</LearnMoreButton>
+        </Wrapper>
+      </Container>
+    </BackgroundImage>
   );
 }
 
 export default Info;
 
-const Container = styled.div`
+const BackgroundImage = styled.div`
   background: linear-gradient(
       180deg,
       rgba(112, 93, 80, 0.8) 0,
@@ -47,15 +51,18 @@ const Container = styled.div`
   z-index: -1;
 `;
 
-const ContentWraper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const Container = styled.div`
   width: 100%;
   max-width: 71.25rem;
   margin: 0 auto;
   padding: calc(4rem + 4.5rem) 2rem 4rem;
   text-align: center;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const TitleInfo = styled.div`
@@ -68,32 +75,27 @@ const TitleInfo = styled.div`
 
 const Boundary = styled.hr`
   width: 3.25rem;
-  height: 0;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
   border: none;
   border-top: 0.2rem solid #f4623a;
 `;
 
-const ContentInfo = styled.div`
+const IntroduceMy = styled.div`
   margin: 0 auto 2rem;
   font-weight: 400;
   font-size: 1.25rem;
   color: hsla(0, 0%, 100%, 0.75);
   line-height: 1.5;
-  font-family: 'Noto Sans KR,sans-serif';
 `;
 
 const LearnMoreButton = styled.div`
   width: 175px;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 10rem;
   background-color: #f4623a;
   font-size: 1rem;
   color: #fff;
-  line-height: 1.5;
   cursor: pointer;
-  font-family: 'Noto Sans KR,sans-serif';
   &:hover {
     outline: rgb(255, 0, 0) dashed 1px;
     background-color: #f24516;

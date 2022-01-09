@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Title from './../../Components/Title/Title';
+import Title from '../../Components/Title/Title';
 import styled from 'styled-components';
 
 function Archiving() {
@@ -15,11 +15,11 @@ function Archiving() {
   return (
     <BackgroundColor>
       <Container>
-        <Title content='ARCHIVING' borderColor='#6c757d' fontColor='#ffffff' />
-        <ArchivingsWrapper>
+        <Title content='ARCHIVINGS' borderColor='#6c757d' fontColor='#ffffff' />
+        <Wrapper>
           {archivingData.map(({ id, image, url, mainContent, subContents }) => {
             return (
-              <ArchivingBoxWrapper
+              <BoxWrapper
                 key={id}
                 onClick={() => {
                   window.open(`https://${url}`, '_blank');
@@ -30,25 +30,25 @@ function Archiving() {
                   alt={image}
                 ></ArchivingImage>
                 <ArchivingLink>{url}</ArchivingLink>
-                <ArchivingContent>
-                  <ArchivingMainContent>
+                <div>
+                  <MainContent>
                     <b className='bold'>{mainContent}</b>
                     입니다.
-                  </ArchivingMainContent>
-                  <ArchivingSubContent>
+                  </MainContent>
+                  <SubContent>
                     {subContents.map(({ id, content }) => {
                       return (
-                        <li key={id} className='marginBottom'>
+                        <li key={id} className='liStyle'>
                           {content}
                         </li>
                       );
                     })}
-                  </ArchivingSubContent>
-                </ArchivingContent>
-              </ArchivingBoxWrapper>
+                  </SubContent>
+                </div>
+              </BoxWrapper>
             );
           })}
-        </ArchivingsWrapper>
+        </Wrapper>
       </Container>
     </BackgroundColor>
   );
@@ -70,20 +70,19 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
-const ArchivingsWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
 `;
 
-const ArchivingBoxWrapper = styled.div`
+const BoxWrapper = styled.div`
   width: 26rem;
   padding: 2rem;
   border-radius: 1rem;
   background-color: #f5f5f5;
   cursor: pointer;
   margin: 0 auto 2rem;
-  @media only screen and (min-width: 977px) {
+  @media only screen and (min-width: 1150px) {
     width: 30rem;
   }
   &:hover {
@@ -104,22 +103,18 @@ const ArchivingLink = styled.div`
   cursor: pointer;
 `;
 
-const ArchivingContent = styled.div`
-  color: #444;
-`;
-
-const ArchivingMainContent = styled.p`
+const MainContent = styled.p`
   margin: 1.5rem 0;
   & .bold {
     font-weight: bold;
   }
 `;
 
-const ArchivingSubContent = styled.ol`
+const SubContent = styled.ol`
   padding-left: 1rem;
   margin: 0;
   list-style: disc;
-  & .marginBottom {
+  & .liStyle {
     margin-bottom: 0.8rem;
   }
 `;
