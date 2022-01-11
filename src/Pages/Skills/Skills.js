@@ -16,10 +16,10 @@ function Skills() {
     <BackgroundColor>
       <Container>
         <Title content='SKILLS' borderColor='#000000' />
-        <SkillsWrapper>
+        <Wrapper>
           {skillsData.map(({ id, title, images }) => {
             return (
-              <SkillBoxWrapper key={id}>
+              <BoxWrapper key={id}>
                 <SkillTitle>{title}</SkillTitle>
                 <div>
                   {images.map(({ id, image }) => {
@@ -32,10 +32,10 @@ function Skills() {
                     );
                   })}
                 </div>
-              </SkillBoxWrapper>
+              </BoxWrapper>
             );
           })}
-        </SkillsWrapper>
+        </Wrapper>
       </Container>
     </BackgroundColor>
   );
@@ -52,7 +52,6 @@ const Container = styled.div`
   max-width: 71.25rem;
   padding: 4rem 2rem;
   margin: 0 auto;
-  height: 190rem;
   @media only screen and (min-width: 575px) {
     height: 170rem;
   }
@@ -73,14 +72,14 @@ const Container = styled.div`
   }
 `;
 
-const SkillsWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-flow: column wrap;
   align-content: space-around;
   height: calc(100% - (7rem + 1px));
 `;
 
-const SkillBoxWrapper = styled.div`
+const BoxWrapper = styled.div`
   width: 15rem;
   padding: 1.5rem;
   margin: 0 1rem 2rem;

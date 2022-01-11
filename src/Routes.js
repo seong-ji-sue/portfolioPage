@@ -2,10 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import GlobalFonts from './Styles/fonts/fonts';
 import Info from './Pages/Info/Info';
-import AboutMe from './Pages/AboutMe/AboutMe';
+import Profiles from './Pages/Profiles/Profiles';
 import Skills from './Pages/Skills/Skills';
-import Archiving from './Pages/Archiving/Archiving';
+import Archivings from './Pages/Archivings/Archivings';
 import Projects from './Pages/Projects/Projects';
+import Careers from './Pages/Careers/Careers';
+import Nav from './Components/Nav/Nav';
 
 class Routes extends React.Component {
   render() {
@@ -13,11 +15,13 @@ class Routes extends React.Component {
       <>
         <GlobalFonts />
         <Router>
-          <Info></Info>
-          <AboutMe></AboutMe>
-          <Skills></Skills>
-          <Archiving></Archiving>
-          <Projects></Projects>
+          <Nav />
+          <Info />
+          <Profiles />
+          <Skills />
+          <Archivings />
+          <Projects />
+          <Careers />
         </Router>
       </>
     );
