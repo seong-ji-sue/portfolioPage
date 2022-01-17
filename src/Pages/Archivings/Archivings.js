@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Title from '../../Components/Title/Title';
 import styled from 'styled-components';
 
-function Archiving() {
+function Archiving({ ArchivingsRef }) {
   const [archivingData, setArchivingData] = useState([]);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function Archiving() {
   }, []);
 
   return (
-    <BackgroundColor>
+    <BackgroundColor ref={ArchivingsRef}>
       <Container>
         <Title content='ARCHIVINGS' borderColor='#6c757d' fontColor='#ffffff' />
         <Wrapper>

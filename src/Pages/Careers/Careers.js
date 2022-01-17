@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Title from '../../Components/Title/Title';
 
-function Career() {
+function Career({ CareersRef }) {
   const [CarrerData, setCareerData] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ function Career() {
 
   return (
     <BackgroundColor>
-      <Contain>
+      <Contain ref={CareersRef}>
         <Title content='CAREERS' borderColor='#000000' fontColor='#000000' />
         <Wrapper>
           {CarrerData.map(({ id, name, kor, date, descriptions, works }) => {
@@ -30,6 +30,17 @@ function Career() {
                 </CareerImg>
                 <CareerInfo>
                   <CarrerTitle>{kor}</CarrerTitle>
+                  <LinkTeg
+                    onClick={() => {
+                      window.open(
+                        'https://scene.zeplin.io/project/5f5f39e80361976f47eea0cd',
+                        '_blank'
+                      );
+                    }}
+                  >
+                    디자인기획서(Click)
+                  </LinkTeg>
+
                   <CarrerDate>{date}</CarrerDate>
                   <CareerDescription>
                     {descriptions.map(({ id, content }) => {
@@ -146,7 +157,22 @@ const CarrerTitle = styled.p`
   font-size: 1.7rem;
 `;
 
+const LinkTeg = styled.span`
+  line-height: normal;
+  background: rgba(135, 131, 120, 0.15);
+  color: #eb5757;
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  cursor: pointer;
+  font-size: 0.8rem;
+  &:hover {
+    color: #f24516;
+    font-weight: bold;
+  }
+`;
+
 const CarrerDate = styled.p`
+  margin-top: 1rem;
   padding-bottom: 2rem;
   font-weight: 400;
   font-size: 1.1rem;

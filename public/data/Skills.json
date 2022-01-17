@@ -5,13 +5,10 @@
       "title": "Frontend",
       "images": [
         { "id": 1, "image": "htmlJsCss" },
-        { "id": 2, "image": "recoil" },
-        { "id": 3, "image": "redux" },
-        { "id": 4, "image": "typeScript" },
-        { "id": 5, "image": "react" },
-        { "id": 6, "image": "reactNative" },
-        { "id": 7, "image": "sass" },
-        { "id": 8, "image": "styleComponent" }
+        { "id": 2, "image": "redux" },
+        { "id": 3, "image": "react" },
+        { "id": 4, "image": "sass" },
+        { "id": 5, "image": "styleComponent" }
       ]
     },
     {
@@ -50,10 +47,9 @@
       "title": "Comunication",
       "images": [
         { "id": 1, "image": "zeplin" },
-        { "id": 2, "image": "figma" },
-        { "id": 3, "image": "notion" },
-        { "id": 4, "image": "slack" },
-        { "id": 5, "image": "zoom" }
+        { "id": 2, "image": "notion" },
+        { "id": 3, "image": "slack" },
+        { "id": 4, "image": "zoom" }
       ]
     }
   ]

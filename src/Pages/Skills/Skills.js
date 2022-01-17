@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Title from './../../Components/Title/Title';
 
-function Skills() {
+function Skills({ SkillsRef }) {
   const [skillsData, setSkillsData] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ function Skills() {
 
   return (
     <BackgroundColor>
-      <Container>
+      <Container ref={SkillsRef}>
         <Title content='SKILLS' borderColor='#000000' />
         <Wrapper>
           {skillsData.map(({ id, title, images }) => {

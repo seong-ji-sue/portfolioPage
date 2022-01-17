@@ -4,7 +4,7 @@ import Title from './../../Components/Title/Title';
 import ImagesCarousel from './ImagesCarousel';
 import DescriptionTable from './DescriptionTable';
 
-function Projects() {
+function Projects({ ProjectsRef }) {
   const [projectData, setProjectData] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function Projects() {
 
   return (
     <BackgroundColor>
-      <Container>
+      <Container ref={ProjectsRef}>
         <Title content='PROJECTS' borderColor='#ffffff' fontColor='#ffffff' />
         <Wrapper>
           {projectData.map(
