@@ -1,19 +1,34 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import MenuModal from './MenuModal';
 
-function Nav() {
+function Nav({ multiRef }) {
   const [isOpen, setIsOpen] = useState(false);
+
   function toggleModal() {
     setIsOpen(!isOpen);
   }
 
+  const changePositionScroll = whereMovePosition => {
+    toggleModal();
+    multiRef[whereMovePosition]?.current.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <Contain>
       <HeaderWrapper>
-        <HeaderTitle>JiSue`s Portfolio</HeaderTitle>
+        <HeaderTitle
+          onClick={() => {
+            window.location.reload();
+            multiRef.InfoRef.current.scrollIntoView();
+          }}
+        >
+          JiSue`s Portfolio
+        </HeaderTitle>
         <ImagWrapper
           onClick={e => {
             e.stopPropagation();
@@ -23,7 +38,13 @@ function Nav() {
           <FontAwesomeIcon className='icon' icon={faBars} />
         </ImagWrapper>
       </HeaderWrapper>
-      {isOpen && <MenuModal isOpen={isOpen} toggleModal={toggleModal} />}
+      {isOpen && (
+        <MenuModal
+          changePositionScroll={changePositionScroll}
+          isOpen={isOpen}
+          toggleModal={toggleModal}
+        />
+      )}
     </Contain>
   );
 }

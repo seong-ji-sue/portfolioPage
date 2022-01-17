@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-function Info() {
+function Info({ infoRef }) {
   const [infoData, setInfoData] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ function Info() {
     infoData;
   return (
     <BackgroundImage>
-      <Container>
+      <Container ref={infoRef}>
         <Wrapper>
           <TitleInfo>
             {developer}
