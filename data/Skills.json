@@ -1,0 +1,56 @@
+{
+  "skillsData": [
+    {
+      "id": 1,
+      "title": "Frontend",
+      "images": [
+        { "id": 1, "image": "htmlJsCss" },
+        { "id": 2, "image": "redux" },
+        { "id": 3, "image": "react" },
+        { "id": 4, "image": "sass" },
+        { "id": 5, "image": "styleComponent" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Backend",
+      "images": [
+        { "id": 1, "image": "java" },
+        { "id": 2, "image": "node" },
+        { "id": 3, "image": "prisma" },
+        { "id": 4, "image": "spring" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Database",
+      "images": [
+        { "id": 1, "image": "mysql" },
+        { "id": 2, "image": "oracle" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Deployment",
+      "images": [{ "id": 1, "image": "aws" }]
+    },
+    {
+      "id": 5,
+      "title": "VersionControl",
+      "images": [
+        { "id": 1, "image": "git" },
+        { "id": 2, "image": "github" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Comunication",
+      "images": [
+        { "id": 1, "image": "zeplin" },
+        { "id": 2, "image": "notion" },
+        { "id": 3, "image": "slack" },
+        { "id": 4, "image": "zoom" }
+      ]
+    }
+  ]
+}

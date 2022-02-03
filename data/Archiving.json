@@ -1,0 +1,33 @@
+{
+  "archivingData": [
+    {
+      "id": 1,
+      "image": "gitHub",
+      "url": "github.com/seong-ji-sue",
+      "mainContent": "소스 코드 저장소",
+      "subContents": [
+        { "id": 1, "content": "팀 프로젝트의 소스코드" },
+        { "id": 2, "content": "개인 프로젝트의 소스코드" },
+        { "id": 3, "content": "기업협업 프로젝트의 소스코드" }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "tistory",
+      "url": "zibu-story.tistory.com/",
+      "mainContent": "공부 및 지식 공유 목적으로 만든 블로그",
+      "subContents": [
+        {
+          "id": 1,
+          "content": "공부한 내용을 정리하며 습득"
+        },
+        { "id": 2, "content": "프로젝트 하면서 느낀 회고록에 관한 기록" },
+        { "id": 3, "content": "코팅 테스트의 풀이 과정 정리" },
+        {
+          "id": 4,
+          "content": "누구나 이해할 수 있도록 하는 지식공유 수단"
+        }
+      ]
+    }
+  ]
+}
