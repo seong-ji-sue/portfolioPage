@@ -5,6 +5,13 @@ import Skills from '../Skills/Skills';
 import Archivings from '../Archivings/Archivings';
 import Projects from '../Projects/Projects';
 import Careers from '../Careers/Careers';
+import {
+  MOCK_ARCHIVINGS_API,
+  MOCK_CAREERS_API,
+  MOCK_INFOS_API,
+  MOCK_PROJECTS_API,
+  MOCK_SKILLS_API,
+} from '../../utils/api';
 import axios from 'axios';
 
 function MainPage({ multiRef }) {
@@ -29,11 +36,11 @@ function MainPage({ multiRef }) {
   const totalData = () => {
     axios
       .all([
-        axios.get('/data/Skills.json'),
-        axios.get('/data/Project.json'),
-        axios.get('/data/Info.json'),
-        axios.get('/data/Career.json'),
-        axios.get('/data/Archiving.json'),
+        axios.get(`${MOCK_SKILLS_API}`),
+        axios.get(`${MOCK_PROJECTS_API}`),
+        axios.get(`${MOCK_INFOS_API}`),
+        axios.get(`${MOCK_CAREERS_API}`),
+        axios.get(`${MOCK_ARCHIVINGS_API}`),
       ])
       .then(
         axios.spread((res1, res2, res3, res4, res5) => {
