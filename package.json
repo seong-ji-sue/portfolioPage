@@ -38,7 +38,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://seong-ji-sue.github.io/portfolio-page",
+  "homepage": "https://seong-ji-sue.github.io/portfolioPage",
   "eslintConfig": {
     "extends": [
       "react-app",
