@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/portfolio-page/static/js/main.a34297b0.chunk.js",
-    "main.js.map": "/portfolio-page/static/js/main.a34297b0.chunk.js.map",
-    "runtime-main.js": "/portfolio-page/static/js/runtime-main.6a90ba6e.js",
-    "runtime-main.js.map": "/portfolio-page/static/js/runtime-main.6a90ba6e.js.map",
-    "static/css/2.47fad997.chunk.css": "/portfolio-page/static/css/2.47fad997.chunk.css",
-    "static/js/2.725b8ad5.chunk.js": "/portfolio-page/static/js/2.725b8ad5.chunk.js",
-    "static/js/2.725b8ad5.chunk.js.map": "/portfolio-page/static/js/2.725b8ad5.chunk.js.map",
-    "index.html": "/portfolio-page/index.html",
-    "static/css/2.47fad997.chunk.css.map": "/portfolio-page/static/css/2.47fad997.chunk.css.map",
-    "static/js/2.725b8ad5.chunk.js.LICENSE.txt": "/portfolio-page/static/js/2.725b8ad5.chunk.js.LICENSE.txt",
-    "static/media/BlackHanSans.2786b177.woff": "/portfolio-page/static/media/BlackHanSans.2786b177.woff",
-    "static/media/NotoSansKR.ee152a87.woff": "/portfolio-page/static/media/NotoSansKR.ee152a87.woff",
-    "static/media/slick-theme.css": "/portfolio-page/static/media/slick.c94f7671.ttf"
+    "main.js": "/portfolioPage/static/js/main.a34297b0.chunk.js",
+    "main.js.map": "/portfolioPage/static/js/main.a34297b0.chunk.js.map",
+    "runtime-main.js": "/portfolioPage/static/js/runtime-main.be2551f0.js",
+    "runtime-main.js.map": "/portfolioPage/static/js/runtime-main.be2551f0.js.map",
+    "static/css/2.046af53b.chunk.css": "/portfolioPage/static/css/2.046af53b.chunk.css",
+    "static/js/2.888f2386.chunk.js": "/portfolioPage/static/js/2.888f2386.chunk.js",
+    "static/js/2.888f2386.chunk.js.map": "/portfolioPage/static/js/2.888f2386.chunk.js.map",
+    "index.html": "/portfolioPage/index.html",
+    "static/css/2.046af53b.chunk.css.map": "/portfolioPage/static/css/2.046af53b.chunk.css.map",
+    "static/js/2.888f2386.chunk.js.LICENSE.txt": "/portfolioPage/static/js/2.888f2386.chunk.js.LICENSE.txt",
+    "static/media/BlackHanSans.2786b177.woff": "/portfolioPage/static/media/BlackHanSans.2786b177.woff",
+    "static/media/NotoSansKR.ee152a87.woff": "/portfolioPage/static/media/NotoSansKR.ee152a87.woff",
+    "static/media/slick-theme.css": "/portfolioPage/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a90ba6e.js",
-    "static/css/2.47fad997.chunk.css",
-    "static/js/2.725b8ad5.chunk.js",
+    "static/js/runtime-main.be2551f0.js",
+    "static/css/2.046af53b.chunk.css",
+    "static/js/2.888f2386.chunk.js",
     "static/js/main.a34297b0.chunk.js"
   ]
 }
