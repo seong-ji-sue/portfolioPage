@@ -14,7 +14,7 @@ function Routes() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/portfolioPage'>
       <Nav multiRef={multiRef} />
       <MainPage multiRef={multiRef} />
     </BrowserRouter>
