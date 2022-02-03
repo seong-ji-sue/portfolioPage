@@ -1,4 +1,4 @@
-const LOCAL_URL = '/data';
+//const LOCAL_URL = '/data';
 const GITHUB_URL = '/portfolioPage/data';
 
 export const MOCK_SKILLS_API = `${GITHUB_URL}/Skills.json`;
