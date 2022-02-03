@@ -14,7 +14,7 @@ function Routes() {
   };
 
   return (
-    <BrowserRouter basename='/'>
+    <BrowserRouter>
       <Nav multiRef={multiRef} />
       <MainPage multiRef={multiRef} />
     </BrowserRouter>
