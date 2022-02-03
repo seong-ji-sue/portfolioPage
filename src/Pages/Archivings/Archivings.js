@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Title from '../../Components/Title/Title';
 import styled from 'styled-components';
 
-function Archiving({ ArchivingsRef }) {
-  const [archivingData, setArchivingData] = useState([]);
-
-  useEffect(() => {
-    fetch('/data/Archiving.json')
-      .then(res => res.json())
-      .then(data => setArchivingData(data.archivingData))
-      .catch(console.log);
-  }, []);
-
+function Archiving({ archivingData, archivingsRef }) {
   return (
-    <BackgroundColor ref={ArchivingsRef}>
+    <BackgroundColor ref={archivingsRef}>
       <Container>
         <Title content='ARCHIVINGS' borderColor='#6c757d' fontColor='#ffffff' />
         <Wrapper>

@@ -1,20 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Title from './../../Components/Title/Title';
 
-function Skills({ SkillsRef }) {
-  const [skillsData, setSkillsData] = useState([]);
-
-  useEffect(() => {
-    fetch('/data/Skills.json')
-      .then(res => res.json())
-      .then(data => setSkillsData(data.skillsData))
-      .catch(console.log);
-  }, []);
-
+function Skills({ skillsData, skillsRef }) {
   return (
     <BackgroundColor>
-      <Container ref={SkillsRef}>
+      <Container ref={skillsRef}>
         <Title content='SKILLS' borderColor='#000000' />
         <Wrapper>
           {skillsData.map(({ id, title, images }) => {

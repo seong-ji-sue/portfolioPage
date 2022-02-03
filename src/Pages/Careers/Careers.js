@@ -1,23 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Title from '../../Components/Title/Title';
 
-function Career({ CareersRef }) {
-  const [CarrerData, setCareerData] = useState([]);
-
-  useEffect(() => {
-    fetch('/data/Career.json')
-      .then(res => res.json())
-      .then(data => setCareerData(data.CareerData))
-      .catch(console.log);
-  }, []);
-
+function Career({ carrerData, careersRef }) {
   return (
     <BackgroundColor>
-      <Contain ref={CareersRef}>
+      <Contain ref={careersRef}>
         <Title content='CAREERS' borderColor='#000000' fontColor='#000000' />
         <Wrapper>
-          {CarrerData.map(({ id, name, kor, date, descriptions, works }) => {
+          {carrerData.map(({ id, name, kor, date, descriptions, works }) => {
             return (
               <BoxWrapper key={id}>
                 <CareerImg>
