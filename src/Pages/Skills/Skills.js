@@ -13,14 +13,8 @@ function Skills({ skillsData, skillsRef }) {
               <BoxWrapper key={id}>
                 <SkillTitle>{title}</SkillTitle>
                 <div>
-                  {images.map(({ id, image }) => {
-                    return (
-                      <SkillImage
-                        key={id}
-                        src={`/images/Skills/${title}/${image}.png`}
-                        alt={image}
-                      />
-                    );
+                  {images.map(({ id, name, image }) => {
+                    return <SkillImage key={id} src={image} alt={name} />;
                   })}
                 </div>
               </BoxWrapper>

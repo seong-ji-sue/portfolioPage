@@ -4,52 +4,62 @@
       "id": 1,
       "title": "Frontend",
       "images": [
-        { "id": 1, "image": "htmlJsCss" },
-        { "id": 2, "image": "redux" },
-        { "id": 3, "image": "react" },
-        { "id": 4, "image": "sass" },
-        { "id": 5, "image": "styleComponent" }
+        {
+          "id": 1,
+          "name": "htmlJsCss",
+          "image": "https://ifh.cc/g/XtlM5z.png"
+        },
+        { "id": 2, "name": "redux", "image": "https://ifh.cc/g/Be7nit.png" },
+        { "id": 3, "name": "react", "image": "https://ifh.cc/g/adPDeC.png" },
+        { "id": 4, "name": "sass", "image": "https://ifh.cc/g/lPy7JR.png" },
+        {
+          "id": 5,
+          "name": "styleComponent",
+          "image": "https://ifh.cc/g/4unwMS.png"
+        }
       ]
     },
     {
       "id": 2,
       "title": "Backend",
       "images": [
-        { "id": 1, "image": "java" },
-        { "id": 2, "image": "node" },
-        { "id": 3, "image": "prisma" },
-        { "id": 4, "image": "spring" }
+        { "id": 1, "name": "java", "image": "https://ifh.cc/g/FYF2RM.png" },
+        { "id": 2, "name": "node", "image": "https://ifh.cc/g/89exfg.png" },
+        { "id": 3, "name": "prisma", "image": "https://ifh.cc/g/mnqA8H.png" },
+        { "id": 4, "name": "spring", "image": "https://ifh.cc/g/MEyJuc.png" }
       ]
     },
     {
       "id": 3,
       "title": "Database",
       "images": [
-        { "id": 1, "image": "mysql" },
-        { "id": 2, "image": "oracle" }
+        { "id": 1, "name": "mysql", "image": "https://ifh.cc/g/toUAz6.png" },
+        { "id": 2, "name": "oracle", "image": "https://ifh.cc/g/JxYuEi.png" }
       ]
     },
     {
       "id": 4,
       "title": "Deployment",
-      "images": [{ "id": 1, "image": "aws" }]
+      "images": [
+        { "id": 1, "name": "aws", "image": "https://ifh.cc/g/79MgkT.png" }
+      ]
     },
     {
       "id": 5,
       "title": "VersionControl",
       "images": [
-        { "id": 1, "image": "git" },
-        { "id": 2, "image": "github" }
+        { "id": 1, "name": "git", "image": "https://ifh.cc/g/P1CtHt.png" },
+        { "id": 2, "name": "github", "image": "https://ifh.cc/g/0L6XgW.png" }
       ]
     },
     {
       "id": 6,
       "title": "Comunication",
       "images": [
-        { "id": 1, "image": "zeplin" },
-        { "id": 2, "image": "notion" },
-        { "id": 3, "image": "slack" },
-        { "id": 4, "image": "zoom" }
+        { "id": 1, "name": "zeplin", "image": "https://ifh.cc/g/WwVDeY.png" },
+        { "id": 2, "name": "notion", "image": "https://ifh.cc/g/rfOW3b.png" },
+        { "id": 3, "name": "slack", "image": "https://ifh.cc/g/10jXoK.png" },
+        { "id": 4, "name": "zoom", "image": "https://ifh.cc/g/dOHRPz.png" }
       ]
     }
   ]
