@@ -37,7 +37,7 @@ const BackgroundImage = styled.div`
       rgba(112, 93, 80, 0.8) 0,
       rgba(112, 93, 80, 0.8) 90%
     ),
-    url('/images/HeaderImg.jpg') 50% no-repeat;
+    url('https://ifh.cc/g/961Ff9.jpg') 50% no-repeat;
   background-size: cover;
   z-index: -1;
 `;

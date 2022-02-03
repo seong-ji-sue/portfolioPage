@@ -8,37 +8,36 @@ function Archiving({ archivingData, archivingsRef }) {
       <Container>
         <Title content='ARCHIVINGS' borderColor='#6c757d' fontColor='#ffffff' />
         <Wrapper>
-          {archivingData.map(({ id, image, url, mainContent, subContents }) => {
-            return (
-              <BoxWrapper
-                key={id}
-                onClick={() => {
-                  window.open(`https://${url}`, '_blank');
-                }}
-              >
-                <ArchivingImage
-                  src={`/images/Archiving/${image}.png`}
-                  alt={image}
-                ></ArchivingImage>
-                <ArchivingLink>{url}</ArchivingLink>
-                <div>
-                  <MainContent>
-                    <b className='bold'>{mainContent}</b>
-                    입니다.
-                  </MainContent>
-                  <SubContent>
-                    {subContents.map(({ id, content }) => {
-                      return (
-                        <li key={id} className='liStyle'>
-                          {content}
-                        </li>
-                      );
-                    })}
-                  </SubContent>
-                </div>
-              </BoxWrapper>
-            );
-          })}
+          {archivingData.map(
+            ({ id, name, image, url, mainContent, subContents }) => {
+              return (
+                <BoxWrapper
+                  key={id}
+                  onClick={() => {
+                    window.open(`https://${url}`, '_blank');
+                  }}
+                >
+                  <ArchivingImage src={image} alt={name}></ArchivingImage>
+                  <ArchivingLink>{url}</ArchivingLink>
+                  <div>
+                    <MainContent>
+                      <b className='bold'>{mainContent}</b>
+                      입니다.
+                    </MainContent>
+                    <SubContent>
+                      {subContents.map(({ id, content }) => {
+                        return (
+                          <li key={id} className='liStyle'>
+                            {content}
+                          </li>
+                        );
+                      })}
+                    </SubContent>
+                  </div>
+                </BoxWrapper>
+              );
+            }
+          )}
         </Wrapper>
       </Container>
     </BackgroundColor>

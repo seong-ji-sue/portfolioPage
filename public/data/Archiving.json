@@ -2,7 +2,8 @@
   "archivingData": [
     {
       "id": 1,
-      "image": "gitHub",
+      "name": "github",
+      "image": "https://ifh.cc/g/bSiQJV.png",
       "url": "github.com/seong-ji-sue",
       "mainContent": "소스 코드 저장소",
       "subContents": [
@@ -13,7 +14,8 @@
     },
     {
       "id": 2,
-      "image": "tistory",
+      "name": "tistory",
+      "image": "https://ifh.cc/g/UH2say.png",
       "url": "zibu-story.tistory.com/",
       "mainContent": "공부 및 지식 공유 목적으로 만든 블로그",
       "subContents": [

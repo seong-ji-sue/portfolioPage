@@ -19,13 +19,10 @@ function ImagesCarousel({ name, images }) {
     <Contain>
       <style>{cssstyle}</style>
       <Slider {...settings}>
-        {images.map(({ id, image }) => {
+        {images.map(({ id, name, image }) => {
           return (
             <div key={id}>
-              <Image
-                src={`/images/Projects/${name}/${image}.png`}
-                alt={image}
-              ></Image>
+              <Image src={image} alt={name}></Image>
             </div>
           );
         })}

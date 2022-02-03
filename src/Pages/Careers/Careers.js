@@ -8,57 +8,58 @@ function Career({ carrerData, careersRef }) {
       <Contain ref={careersRef}>
         <Title content='CAREERS' borderColor='#000000' fontColor='#000000' />
         <Wrapper>
-          {carrerData.map(({ id, name, kor, date, descriptions, works }) => {
-            return (
-              <BoxWrapper key={id}>
-                <CareerImg>
-                  <LogoWrapper>
-                    <CompanyLogo
-                      src={`/images/Career/${name}.png`}
-                      alt={name}
-                    />
-                  </LogoWrapper>
-                </CareerImg>
-                <CareerInfo>
-                  <CarrerTitle>{kor}</CarrerTitle>
-                  <LinkTeg
-                    onClick={() => {
-                      window.open(
-                        'https://scene.zeplin.io/project/5f5f39e80361976f47eea0cd',
-                        '_blank'
-                      );
-                    }}
-                  >
-                    디자인기획서(Click)
-                  </LinkTeg>
+          {carrerData.map(
+            ({ id, name, image, kor, date, descriptions, works }) => {
+              return (
+                <BoxWrapper key={id}>
+                  <CareerImg>
+                    <LogoWrapper>
+                      <CompanyLogo src={image} alt={name} />
+                    </LogoWrapper>
+                  </CareerImg>
+                  <CareerInfo>
+                    <CarrerTitle>{kor}</CarrerTitle>
+                    <LinkTeg
+                      onClick={() => {
+                        window.open(
+                          'https://scene.zeplin.io/project/5f5f39e80361976f47eea0cd',
+                          '_blank'
+                        );
+                      }}
+                    >
+                      디자인기획서(Click)
+                    </LinkTeg>
 
-                  <CarrerDate>{date}</CarrerDate>
-                  <CareerDescription>
-                    {descriptions.map(({ id, content }) => {
+                    <CarrerDate>{date}</CarrerDate>
+                    <CareerDescription>
+                      {descriptions.map(({ id, content }) => {
+                        return (
+                          <div key={id}>
+                            {content}
+                            <br />
+                            <br />
+                          </div>
+                        );
+                      })}
+                    </CareerDescription>
+                    {works.map(({ id, title, period, contents }) => {
                       return (
-                        <div key={id}>
-                          {content}
-                          <br />
-                          <br />
-                        </div>
+                        <CareerWork key={id}>
+                          <WorkTitle>{title}</WorkTitle>
+                          <WorkPeriod>{period}</WorkPeriod>
+                          {contents.map(({ id, content }) => {
+                            return (
+                              <WorkContent key={id}>{content}</WorkContent>
+                            );
+                          })}
+                        </CareerWork>
                       );
                     })}
-                  </CareerDescription>
-                  {works.map(({ id, title, period, contents }) => {
-                    return (
-                      <CareerWork key={id}>
-                        <WorkTitle>{title}</WorkTitle>
-                        <WorkPeriod>{period}</WorkPeriod>
-                        {contents.map(({ id, content }) => {
-                          return <WorkContent key={id}>{content}</WorkContent>;
-                        })}
-                      </CareerWork>
-                    );
-                  })}
-                </CareerInfo>
-              </BoxWrapper>
-            );
-          })}
+                  </CareerInfo>
+                </BoxWrapper>
+              );
+            }
+          )}
         </Wrapper>
       </Contain>
     </BackgroundColor>
