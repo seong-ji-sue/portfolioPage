@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Title from './../../Components/Title/Title';
 import ImagesCarousel from './ImagesCarousel';
 import DescriptionTable from './DescriptionTable';
 
-function Projects({ ProjectsRef }) {
-  const [projectData, setProjectData] = useState([]);
-
-  useEffect(() => {
-    fetch('/data/Project.json')
-      .then(res => res.json())
-      .then(data => setProjectData(data.projectData))
-      .catch(console.log);
-  }, []);
-
+function Projects({ projectData, projectsRef }) {
   return (
     <BackgroundColor>
-      <Container ref={ProjectsRef}>
+      <Container ref={projectsRef}>
         <Title content='PROJECTS' borderColor='#ffffff' fontColor='#ffffff' />
         <Wrapper>
           {projectData.map(

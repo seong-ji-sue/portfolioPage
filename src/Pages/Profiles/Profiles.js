@@ -10,7 +10,7 @@ import {
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 
-function Profiles({ ProfilesRef }) {
+function Profiles({ profilesRef }) {
   const profileData = [
     { id: 1, title: '이름', content: '성지수', icon: faUser },
     { id: 2, title: '생년월일', content: '93.12.02', icon: faCalendarAlt },
@@ -29,7 +29,7 @@ function Profiles({ ProfilesRef }) {
     },
   ];
   return (
-    <Container ref={ProfilesRef}>
+    <Container ref={profilesRef}>
       <Title content='PROFILES' borderColor='#cccccc' />
       <Wrapper>
         {profileData.map(({ id, title, content, icon }) => {

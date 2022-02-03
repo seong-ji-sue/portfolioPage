@@ -108,7 +108,7 @@
         {
           "id": 2,
           "main": "도매인",
-          "link": "http://3.34.61.252:3000/"
+          "link": "http://ec2-3-36-86-185.ap-northeast-2.compute.amazonaws.com:3000/"
         },
         {
           "id": 3,

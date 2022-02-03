@@ -10,22 +10,22 @@ function MenuModal({ isOpen, toggleModal, changePositionScroll }) {
       onRequestClose={toggleModal}
       ariaHideApp={false}
     >
-      <ModalMenu onClick={() => changePositionScroll('InfoRef')}>
+      <ModalMenu onClick={() => changePositionScroll('infoRef')}>
         Info
       </ModalMenu>
-      <ModalMenu onClick={() => changePositionScroll('ProfilesRef')}>
+      <ModalMenu onClick={() => changePositionScroll('profilesRef')}>
         Profiles
       </ModalMenu>
-      <ModalMenu onClick={() => changePositionScroll('SkillsRef')}>
+      <ModalMenu onClick={() => changePositionScroll('skillsRef')}>
         Skills
       </ModalMenu>
-      <ModalMenu onClick={() => changePositionScroll('ArchivingsRef')}>
+      <ModalMenu onClick={() => changePositionScroll('archivingsRef')}>
         Archivings
       </ModalMenu>
-      <ModalMenu onClick={() => changePositionScroll('ProjectsRef')}>
+      <ModalMenu onClick={() => changePositionScroll('projectsRef')}>
         Projects
       </ModalMenu>
-      <ModalMenu onClick={() => changePositionScroll('CareersRef')}>
+      <ModalMenu onClick={() => changePositionScroll('careersRef')}>
         Careers
       </ModalMenu>
     </Modal>

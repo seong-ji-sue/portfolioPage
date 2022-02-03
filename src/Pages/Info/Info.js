@@ -1,16 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-function Info({ infoRef }) {
-  const [infoData, setInfoData] = useState([]);
-
-  useEffect(() => {
-    fetch('/data/Info.json')
-      .then(res => res.json())
-      .then(data => setInfoData(data.infoData))
-      .catch(console.log);
-  }, []);
-
+function Info({ infoData, infoRef }) {
   const { title, developer, firstSentence, secondSentence, thirthSentence } =
     infoData;
   return (
