@@ -1,14 +1,13 @@
 import React from 'react';
-import Modal from 'react-modal';
 import styled from 'styled-components';
 
-function MenuModal({ isOpen, toggleModal, changePositionScroll }) {
+function MenuModal({ toggleModal, changePositionScroll }) {
   return (
-    <Modal
-      style={modalStyle}
-      isOpen={isOpen}
-      onRequestClose={toggleModal}
-      ariaHideApp={false}
+    <Wrapper
+      onMouseLeave={e => {
+        e.stopPropagation();
+        toggleModal();
+      }}
     >
       <ModalMenu onClick={() => changePositionScroll('infoRef')}>
         Info
@@ -28,26 +27,22 @@ function MenuModal({ isOpen, toggleModal, changePositionScroll }) {
       <ModalMenu onClick={() => changePositionScroll('careersRef')}>
         Careers
       </ModalMenu>
-    </Modal>
+    </Wrapper>
   );
 }
 
 export default MenuModal;
 
-const modalStyle = {
-  overlay: {
-    backgroundColor: 'rgba(255, 255, 255, 0.45)',
-  },
-  content: {
-    boxShadow: '0 1px 0.3rem #d3d3d3',
-    maxHeight: '24rem',
-    paddingLeft: '2rem',
-    transition: 'max-height 0.2s ease',
-  },
-};
+const Wrapper = styled.div`
+  width: 100%;
+  max-width: 71.25rem;
+  background-color: #fff;
+  max-height: 25rem;
+  padding: 0 2rem 1.25rem 2rem;
+  margin: 0 auto;
+`;
 
 const ModalMenu = styled.div`
-  display: table;
   margin-top: 1rem;
   padding: 0.75rem 0 0 0;
   font-weight: 700;

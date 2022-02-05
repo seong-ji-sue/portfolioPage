@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import IntroduceModal from './IntroduceModal';
 
 function Info({ infoData, infoRef }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleModal() {
+    setIsOpen(!isOpen);
+  }
+
   const { title, developer, firstSentence, secondSentence, thirthSentence } =
     infoData;
   return (
@@ -22,7 +29,15 @@ function Info({ infoData, infoRef }) {
             {thirthSentence}
             <br />
           </IntroduceMy>
-          <LearnMoreButton>더 알아보기 ↓</LearnMoreButton>
+          <LearnMoreButton
+            onClick={e => {
+              e.stopPropagation();
+              toggleModal();
+            }}
+          >
+            더 알아보기 ↓
+          </LearnMoreButton>
+          {isOpen && <IntroduceModal {...{ isOpen, toggleModal }} />}
         </Wrapper>
       </Container>
     </BackgroundImage>
