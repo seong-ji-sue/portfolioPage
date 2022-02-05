@@ -30,7 +30,7 @@ function Nav({ multiRef }) {
           JiSue`s Portfolio
         </HeaderTitle>
         <ImagWrapper
-          onClick={e => {
+          onMouseEnter={e => {
             e.stopPropagation();
             toggleModal();
           }}

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Title from './../../Components/Title/Title';
-import ImagesCarousel from './ImagesCarousel';
+import TotalCarousel from '../../Components/Carousel/TotalCarousel';
 import DescriptionTable from './DescriptionTable';
 
 function Projects({ projectData, projectsRef }) {
@@ -28,7 +28,7 @@ function Projects({ projectData, projectsRef }) {
                     {member} <span>( {date} )</span>
                   </ProjectData>
                   <ChangeLayout>
-                    <ImagesCarousel name={name} images={images} />
+                    <TotalCarousel name={'project'} propsData={images} />
                     <ProjectContent>
                       {contents.map(({ id, text }) => {
                         return (
