@@ -25,16 +25,14 @@
       "images": [
         { "id": 1, "name": "java", "image": "https://ifh.cc/g/FYF2RM.png" },
         { "id": 2, "name": "node", "image": "https://ifh.cc/g/89exfg.png" },
-        { "id": 3, "name": "prisma", "image": "https://ifh.cc/g/mnqA8H.png" },
-        { "id": 4, "name": "spring", "image": "https://ifh.cc/g/MEyJuc.png" }
+        { "id": 3, "name": "prisma", "image": "https://ifh.cc/g/mnqA8H.png" }
       ]
     },
     {
       "id": 3,
       "title": "Database",
       "images": [
-        { "id": 1, "name": "mysql", "image": "https://ifh.cc/g/toUAz6.png" },
-        { "id": 2, "name": "oracle", "image": "https://ifh.cc/g/JxYuEi.png" }
+        { "id": 1, "name": "mysql", "image": "https://ifh.cc/g/toUAz6.png" }
       ]
     },
     {
@@ -54,6 +52,13 @@
     },
     {
       "id": 6,
+      "title": "Scheduling",
+      "images": [
+        { "id": 1, "name": "jira", "image": "https://ifh.cc/g/HIcN6G.png" }
+      ]
+    },
+    {
+      "id": 7,
       "title": "Comunication",
       "images": [
         { "id": 1, "name": "zeplin", "image": "https://ifh.cc/g/WwVDeY.png" },

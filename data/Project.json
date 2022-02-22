@@ -16,22 +16,22 @@
       "contents": [
         {
           "id": 1,
-          "text": "조구만 스튜디오 웹 사이트를 클론코딩한 프로젝트 입니다. 팀원 6명이서 2주동안 React, Node를 경험하면서 처음으로 웹 서비스를 개발하고 배포했습니다. 라이브러리를 사용을 안하고 직접 코딩하면서 원리를 파악하는데 집중했습니다."
+          "text": "조구만 스튜디오 웹 사이트를 클론 코딩한 프로젝트입니다. 팀원 6명이서 2주 동안 React, Node를 경험하면서 처음으로 웹 서비스를 개발하고 배포했습니다. 라이브러리를 사용을 안 하고 직접 코딩하면서 원리를 파악하는데 집중했습니다."
         },
         {
           "id": 2,
-          "text": "저는 프론트에서 class와 sass 기반으로 코드를 작성했고 메뉴를 클릭시 스크롤 이동을 구현하려고 Ref에 대한 개념을 적용했습니다. 그리고 백엔드에서는 Prisma와 mysql, Express 기반으로 코드를 작성하여 MVC의 전반적인 역활과 기능을 이해했습니다. JWT토큰 발행 및 암호화, 복호화를 구현했고 Request 데이터를 검사하는 정규화 모듈을 구현하여 다른 API에도 사용할 수 있게 했습니다. "
+          "text": "저는 프론트에서 class와 sass 기반으로 코드를 작성했고 메뉴를 클릭 시 스크롤 이동을 구현하려고 Ref에 대한 개념을 적용했습니다. 그리고 상품 개수에 따라 구매 버튼 비활성화 또는 가격이 달라지게 구현했습니다. 백엔드에서는 Prisma와 mysql, Express 기반으로 코드를 작성하여 MVC의 전반적인 역할과 기능을 이해했습니다. JWT 토큰 발행 및 암호화, 복호화를 구현했고 Request 데이터를 검사하는 정규화 모듈을 구현하여 다른 API에도 사용할 수 있게 했습니다. "
         }
       ],
       "descriptions": [
         {
           "id": 1,
-          "main": "맡은기능(Front)",
-          "text": "Detail 페이지 ( 옵션 클릭시 상품 수량 및 가격 변동 기능 구현, 좋아요 기능 구현, 상황 별 썸네일 이미지 변경, Ref를 이용하여 스크롤 이동"
+          "main": "맡은 기능(Front)",
+          "text": "Detail 페이지 ( 옵션 클릭 시 상품 수량 및 가격 변동 기능 구현, 좋아요 기능 구현, 상황 별 sumnail 이미지 변경, Ref를 이용하여 스크롤 이동"
         },
         {
           "id": 2,
-          "main": "맡은기능(Back)",
+          "main": "맡은 기능(Back)",
           "text": "회원가입 API, JWT 및 암호와 + 복호화, Request 데이터 정규식 검사 Utill 구현"
         },
         {
@@ -57,7 +57,7 @@
         {
           "id": 7,
           "main": "Skills(Front)",
-          "text": "React, Sass, Javascript, HTML"
+          "text": "React, Sass, Javascript"
         },
         {
           "id": 8,
@@ -104,22 +104,22 @@
       "contents": [
         {
           "id": 1,
-          "text": "프립 웹 사이트를 클론 코딩한 프로젝트 입니다. 2주동안 프론트 5명 백엔드 2명이 각자 역활을 나눠서 프로젝트를 진행했습니다. 라이브러를 사용하여 코딩 하는 시간을 줄이고 다양한 기능을 자유롭게 구현하는것을 목표로 했습니다. "
+          "text": "프립 웹 사이트를 클론 코딩한 프로젝트입니다. 2주 동안 프론트 5명 백엔드 2명이 각자 역할을 나눠서 프로젝트를 진행했습니다. 라이브러리를 사용하여 코딩하는 시간을 줄이고 다양한 기능을 자유롭게 구현하는 것을 목표로 했습니다. "
         },
         {
           "id": 2,
-          "text": "소통에서는 처음 프로젝트랑 다르게 미팅할때마다 회의내용, 오늘 할일, 대략적인 구현 기간 등 Notion에 남겨서 팀원들이랑 공유하는데 초점을 맞췄고 기능에서는 함수형, style Componet, hook 기반으로 검색 모달, 메인 페이지 전반적인 기능, 케라셀, 공통 Card Componet 활용하여 팀 소계 페이지 List 페이지 구현, Header, Nav, Footer 등을 다양한 페이지와 기능을 구현했습니다."
+          "text": "소통에서는 처음 프로젝트랑 다르게 미팅할 때마다 회의 내용, 오늘 할 일, 대략적인 구현 기간 등 Notion에 남겨서 팀원들이랑 공유하는 데 초점을 맞췄고 기능에서는 함수형, style Componet, hook 기반으로 검색 모달, 메인 페이지 전반적인 기능, 케라 셀, 공통 Card Componet 활용하여 팀 소계 페이지, Nav, Footer, categories 페이지 등 다양한 페이지와 기능을 구현했습니다."
         },
         {
           "id": 3,
-          "text": " styleComponent, Mixin을 사용하여 단기간에 레이아웃을 완성했고 모달이랑 검색엔진, 로컬스토리지를 직접 하나 하나 만져보면서 원리를 깨닭게 되었습니다. 또 비동기에 따라 렌더링이 늦을때 동기로 바꿔줘야된다는 점을 파악할 수 있게 되서 좋았습니다."
+          "text": "2주 동안 짧은 기간이었지만 styleComponent, mixin을 사용하여 단기간에 레이아웃을 완성했고 모달이랑 검색엔진, 로컬 스토리지를 직접 하나하나 만져보면서 원리를 깨닫게 되었습니다. 또 비동기에 따라 렌더링이 늦을 때 동기로 바꿔줘야 된다는 점을 파악할 수 있게 돼서 좋았습니다."
         }
       ],
       "descriptions": [
         {
           "id": 1,
           "main": "맡은기능(Front)",
-          "text": "검색 모달 + 최근검색어, 메인 페이지 레이아웃, 케라셀, 공통 Card Componet 활용하여 팀 소계 페이지 레이아웃 구현, Header, Nav, Footer 구현"
+          "text": "검색 모달 + 최근 검색어, 메인 페이지 레이아웃, 케라 셀, 공통 Card Componet 활용하여 팀 소계 페이지 레이아웃 구현, Header, Nav, Footer 구현"
         },
         {
           "id": 2,
@@ -139,7 +139,7 @@
         {
           "id": 5,
           "main": "Skills(Front)",
-          "text": "React, React Hook, Javascript, HTML, Style Componet, Restful Api, React-Modal, React-Slick"
+          "text": "React, React Hook, Javascript, Style Componet, Restful Api, React-Modal, React-Slick"
         },
         {
           "id": 6,
@@ -175,21 +175,21 @@
       "contents": [
         {
           "id": 1,
-          "text": "Blackboard 시스템과 클라이언트의 학사 정보 데이터를 연결하기위해 SaaS 플랫폼을 구축하는 회사에서 1달간 프로젝트를 했습니다. 백엔드에서는 API 구현은 되있지만 Front는 레이아웃정도만 구현되있는 상태였고 전반적으로 response 데이터 가공 스케쥴 생성 및 CRUD, 예외처리 정규화를 진행하였습니다."
+          "text": "Blackboard 시스템과 클라이언트의 학사 정보 데이터를 연결하기 위해 SaaS 플랫폼을 구축하는 회사에서 1달간 프로젝트를 했습니다. 백엔드에서는 API 구현은 돼있지만 Front는 레이아웃 정도만 구현돼있는 상태였고 전반적으로 데이터 가공, 스케줄 생성 및 CRUD, 예외 처리 정규화를 진행하였습니다."
         },
         {
           "id": 2,
-          "text": "프로젝트 하면서 처음으로 Refresh 토큰과 Access 토큰의 차이점을 알게되었고 스케쥴링에 따른 CRUD를 제대로 구현 할 수 있어서 좋았습니다. 같은 레이아웃인데 기능만 다를 경우는 다른 props에 따라 다르게 동작하도록 구현했습니다. 남은 기간에는 인수인계를 위해 리팩토링 및 문서화에 집중했습니다."
+          "text": "프로젝트 하면서 처음으로 Refresh 토큰과 Access 토큰의 차이점을 알게 되었고 스케줄링에 따른 CRUD를 제대로 구현할 수 있어서 좋았습니다. 같은 레이아웃인데 기능만 다를 경우는 다른 props에 따라 다르게 동작하도록 구현했습니다. 남은 기간에는 인수인계를 위해 리팩토링 및 문서화에 집중했습니다."
         },
         {
           "id": 3,
-          "text": "프로젝트에 담은 내용은 사전에 대표님께 허락 받은 사항입니다."
+          "text": "프로젝트에 담은 내용은 사전에 대표님께 허락받은 사항입니다."
         }
       ],
       "descriptions": [
         {
           "id": 1,
-          "main": "맡은기능(Front)",
+          "main": "맡은 기능(Front)",
           "text": "Refresh 토큰과 Access 토큰 적용, 스케쥴에 따른 CRUD, 리팩토링, 문서화, 로그인, 회원가입"
         },
         {
@@ -200,7 +200,7 @@
         {
           "id": 3,
           "main": "Skills(Front)",
-          "text": "React, React Hook, Javascript, HTML, Style Componet, Restful ApI, antd"
+          "text": "React, React Hook, Javascript, Style Componet, Restful ApI, antd"
         },
         {
           "id": 4,
@@ -229,7 +229,7 @@
       "contents": [
         {
           "id": 1,
-          "text": "취업을 위해 포토폴리오 및 자기소계서를 작성중 다양한 기능과 내가 원하는 레이아웃으로 만들고 싶어서 프로젝트를 시작했습니다. 애드립때 사용한 useRef를 활용하여 스크롤 이동을 자연스럽게 구현했고 다양한 Css 속성들을 알게되서 좋았습니다."
+          "text": "취업을 위해 포토폴리오 및 자기소개서를 작성 중 다양한 기능과 내가 원하는 레이아웃으로 만들고 싶어서 프로젝트를 시작했습니다. 애드립때 사용한 useRef를 활용하여 스크롤 이동을 자연스럽게 구현했고 mediaQuery 사용해서 반응형으로 구현했고 전반적으로 Css에 초점을 맞춰 작업을 했습니다."
         }
       ],
       "descriptions": [
@@ -246,12 +246,73 @@
         {
           "id": 3,
           "main": "Skills(Front)",
-          "text": "React, React Hook, Javascript, HTML, Style Componet, Restful Api, React-Modal, React-Slick"
+          "text": "React, React Hook, Javascript, Style Componet, Restful Api, React-Modal, React-Slick"
         },
         {
           "id": 4,
           "main": "Deployment",
           "text": "GitHub, Notion"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Loss Leader",
+      "title": "로스리더 페이지",
+      "member": "Front 3, Back 2",
+      "date": "진행중 end time 4 Week",
+      "images": [
+        { "id": 1, "name": "info", "image": "https://ifh.cc/g/nbgj5i.jpg" },
+        {
+          "id": 2,
+          "name": "description",
+          "image": "https://ifh.cc/g/9Z8aQt.jpg"
+        },
+        {
+          "id": 3,
+          "name": "naverMap",
+          "image": "https://ifh.cc/g/xlDbVI.jpg"
+        },
+        { "id": 4, "name": "reviews", "image": "https://ifh.cc/g/j9Xtoe.jpg" }
+      ],
+      "contents": [
+        {
+          "id": 1,
+          "text": "직접 개발하고 싶다는 생각에 런칭했던 로스리더 사이트를 디자인 초안만 보고 시작했습니다. 노선에 페이지 설명 및 데이터 등 정리 후 okky에서 팀원을 구했습니다. Back은 Spring, mysql, myBatis로 작업하고 있고 swagger로 api를 정리하고 있습니다. 프론트는 React, StyleComponet, Mui, Context, Redux, Restful 등 사용하여 구현하고 있습니다."
+        },
+        {
+          "id": 2,
+          "text": "저는 전체 PM으로 페이지마다 기능 설명 및 전반적인 일정, 의견 조율 등 맡고 있고 팀원들이 개발에 집중하는 데 포커싱을 잡고 있습니다. 프론트 엔드에서는 Detail 페이지, naver map API, 리뷰, 무한 스크롤, 페이지 네이션, 신청하기 페이지, footer 이렇게 맡아서 진행하고 있습니다."
+        },
+        {
+          "id": 3,
+          "text": "원래 Detail 페이지에서 리뷰 CRUD를 구현하려고 했으나 주문한 사람만 리뷰 쓰는 로직을 구현하기 위해 My 페이지에서 기능 구현하기로 했습니다."
+        },
+        {
+          "id": 4,
+          "text": "git flow나 브랜치명, 커밋규칙, 파일 폴더명 위치 규칙 등 직접 정했고 Button이나 Input 은 mui를 커스터마이징 한 부분으로 통일해서 사용하고 있습니다."
+        }
+      ],
+      "descriptions": [
+        {
+          "id": 1,
+          "main": "맡은기능(Front)",
+          "text": "Detail 페이지, naver map API, 리뷰, 무한스크롤, 페이지네이션, 신청하기페이지, footer"
+        },
+        {
+          "id": 2,
+          "main": "Notion",
+          "link": "https://www.notion.so/ee2586a2bcd54da792d029b25a40e371"
+        },
+        {
+          "id": 3,
+          "main": "Skills(Front)",
+          "text": "React, React Hook, Javascript, Style Componet, Restful Api, MUI, React-Slick, Redux, Context, Jira"
+        },
+        {
+          "id": 4,
+          "main": "Deployment",
+          "text": "GitHub, Notion, Slack, Discord, Jira, swagger"
         }
       ]
     }
